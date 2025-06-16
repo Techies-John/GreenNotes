@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--neon-midnight-color-bg);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--neon-midnight-color-text);
+}
+
+main {
+  flex: 1;
+}
+
+.card {
+  background-color: var(--neon-midnight-color-surface);
+  border: 1px solid var(--neon-midnight-color-accent);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px var(--color-accent-light);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.card-title {
+  color: var(--neon-midnight-color-accent);
+  margin-bottom: 10px;
+}
+
+.card-description {
+  color: var(--neon-midnight-color-text);
+  margin-bottom: 16px;
+}
+
+.card-button {
+  background-color: transparent;
+  border: 2px solid var(--neon-midnight-color-accent);
+  color: var(--neon-midnight-color-accent);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-button:hover {
+  background-color: var(--neon-midnight-color-accent-light);
+}
+
+footer {
+  background-color: antiquewhite;
+  height: 40px;
+}
