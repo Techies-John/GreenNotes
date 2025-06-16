@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Todo List</title>
+    <title>New task</title>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/form/form.css" />
   </head>
   <body>
     <div id="app">
@@ -15,7 +16,7 @@
         <nav class="nav-bar">
           <div class="nav-left">
             <span class="headtext">TO-DO LIST</span>
-            <a href="/form.html" class="card-button add-item">Add Item</a>
+            <a href="/index.html" class="card-button add-item">Go back</a>
           </div>
           <div class="github">
             <img class="star" src="/images/star.png" />
@@ -28,16 +29,24 @@
       </header>
 
       <main>
-        <section class="card-grid">
-          <div class="card">
-            <h2 class="card-title">New Task</h2>
-            <p class="card-description">
-              This is a sample description inside a card layout. Cards are great
-              for grouping content💚!
-            </p>
-            <button class="card-button">View Task</button>
-          </div>
-        </section>
+        <form id="todo-form" action="" method="post">
+          <label for="task-name"> Task Name: </label>
+          <input
+            name="task-name"
+            type="text"
+            required
+            placeholder="Task name (e.g making green tea💚)"
+          />
+          <br />
+
+          <label for="task-description">Description:</label>
+          <textarea
+            class="task-description"
+            placeholder="Type your notes here..."
+          ></textarea>
+
+          <button type="submit" class="card-button">Submit</button>
+        </form>
       </main>
 
       <footer class="site-footer">
@@ -51,11 +60,8 @@
             target="https://github.com/Techies-John/todolist"
             >GitHub Repo</a
           >
-          |
-          <a href="#top">Back to Top</a>
         </p>
       </footer>
     </div>
   </body>
-  <script src="js/index.js"></script>
 </html>

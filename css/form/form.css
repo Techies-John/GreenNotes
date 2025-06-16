@@ -1,0 +1,50 @@
+#todo-form {
+  width: 50%;
+  padding: 30px;
+  background-color: var(--neon-midnight-color-bg-level2);
+  border-radius: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#todo-form input[type="text"] {
+  width: 95%;
+  padding: 1rem;
+  border: 2px solid var(--neon-midnight-color-accent);
+  background-color: var(--neon-midnight-color-surface);
+  color: var(--neon-midnight-color-text);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#todo-form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+.task-description {
+  width: 95%;
+  height: 120px;
+  padding: 1rem;
+  border: 2px solid var(--neon-midnight-color-accent);
+  background-color: var(--neon-midnight-color-surface);
+  color: var(--neon-midnight-color-text);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  resize: vertical; /* Let users resize if needed */
+  max-height: 200px;
+  min-height: 100px;
+}
+
+main button {
+  margin-top: 20px;
+}

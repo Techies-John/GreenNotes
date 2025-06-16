@@ -1,15 +1,21 @@
 :root {
   /* Theme: Neon Midnight 🌌⚡ */
   --neon-midnight-color-bg: #00000d;
+  --neon-midnight-color-bg-level2: #0a0a1a;
   --neon-midnight-color-text: #d1d5db; /* soft gray */
   --neon-midnight-color-accent: #a3e635; /* electric lime */
   --neon-midnight-color-surface: #111827; /* dark card background */
   --neon-midnight-color-accent-light: rgba(163, 230, 53, 0.1);
 
-  /* Theme: Neon Midnight light */
-  --neon-midnight-color-bg-light: #00000d;
-  --neon-midnight-color-text-light: #d1d5db; /* soft gray */
-  --neon-midnight-color-accent-light: #a3e635; /* electric lime */
-  --neon-midnight-color-surface-light: #111827; /* dark card background */
-  --neon-midnight-color-accent-light: rgba(163, 230, 53, 0.1);
+  /* Theme: Neon Midnight Light 🌤⚡ */
+  --neon-midnight-color-bg-light: #f8fafc; /* light slate background */
+  --neon-midnight-color-text-light: #1f2937; /* dark gray text */
+  /* --neon-midnight-color-accent-light: #a3e635; electric lime (same for consistency) */
+  --neon-midnight-color-surface-light: #ffffff; /* card background - bright white */
+  --neon-midnight-color-accent-light-glow: rgba(
+    163,
+    230,
+    53,
+    0.1
+  ); /* soft glow effect */
 }
