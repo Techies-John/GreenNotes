@@ -1,4 +1,4 @@
-# 🗒️ Notes App
+# Green Notes App 💚
 
 A full-stack notes-taking application powered by a containerized Node.js + MySQL backend, and a lightweight static frontend. Built with 💚 for simplicity, modularity, and local-first workflows.
 
