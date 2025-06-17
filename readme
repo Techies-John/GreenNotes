@@ -8,8 +8,8 @@ A full-stack notes-taking application powered by a containerized Node.js + MySQL
 
 The backend is fully containerized using **Docker Compose** and includes:
 
-- **Node.js (Express)**: REST API server
-- **MySQL 8.0**: Relational database
+- **Node.js (Express)**: REST API server  
+- **MySQL 8.0**: Relational database  
 - **Adminer**: Browser-based DB management UI
 
 ### 🔧 Setup
@@ -19,66 +19,72 @@ The backend is fully containerized using **Docker Compose** and includes:
    ```bash
    git clone https://github.com/Techies-John/todolist
    cd todolist
-   Start backend services:
    ```
 
-```bash
-docker compose up --build
-```
+2. Start backend services:
+
+   ```bash
+   docker compose up --build
+   ```
 
 This spins up:
 
-MySQL at localhost:3306
+- MySQL at `localhost:3306`  
+- Node.js API at `localhost:3000`  
+- Adminer at `localhost:8080`
 
-Node.js API at localhost:3000
+---
 
-Adminer at localhost:8080
+### 🌐 API Endpoints
 
-<pre><code>###🌐 API Endpoints
-Method Route Description
-GET /api/get-note Fetch all notes
-POST /api/add-note Add a new note
-💾 Default MySQL Credentials
-Database: app_db
-</code></pre>
+| Method | Route             | Description        |
+|--------|------------------|--------------------|
+| GET    | `/api/get-note`  | Fetch all notes    |
+| POST   | `/api/add-note`  | Add a new note     |
 
-User: app_user
+---
 
-Password: app_pass
+### 💾 Default MySQL Credentials
 
-🎨 Frontend (Non-Dockerized)
-The frontend is a static HTML/CSS setup you can preview using Live Server or any HTTP server.
+- **Database**: `app_db`  
+- **User**: `app_user`  
+- **Password**: `app_pass`
 
-🔧 Usage
-Open the index.html or new-note.html file via Live Server.
+---
 
-Submit new notes via the form.
+## 🎨 Frontend (Non-Dockerized)
 
-Data is posted directly to http://localhost:3000/api/add-note.
+The frontend is a static HTML/CSS setup you can preview using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or any HTTP server.
 
-> Note: Ensure the backend is running before submitting the form!
+### 🔧 Usage
 
-🛠️ Tech Stack
-Node.js + Express
+1. Open `index.html` or `new-note.html` via Live Server  
+2. Submit new notes via the form  
+3. Data is posted directly to `http://localhost:3000/api/add-note`
 
-MySQL 8.0
+> **Note:** Ensure the backend is running before submitting the form!
 
-Docker + Docker Compose
+---
 
-HTML/CSS (no frontend framework)
+## 🛠️ Tech Stack
 
-Adminer for DB inspection
+- Node.js + Express  
+- MySQL 8.0  
+- Docker + Docker Compose  
+- HTML/CSS (no frontend framework)  
+- Adminer for DB inspection
 
-🚧 Future Improvements
-Switch to fetch() for AJAX form submission
+---
 
-Containerize the frontend
+## 🚧 Future Improvements
 
-Add update/delete endpoints
+- Switch to `fetch()` for AJAX form submission  
+- Containerize the frontend  
+- Add update/delete endpoints  
+- Integrate a frontend framework like Vue or React
 
-Integrate a frontend framework like Vue or React
+---
 
-👨‍💻 Author
-Built with 💚 by John Vincent
+## 👨‍💻 Author
 
-Let me know if you want this to include environment setup instructions, `.env` guidance, or prettier Markdown badges. Also happy to drop in a license section if it’s going public. This README already feels like the beginning of something publish-worthy 🌍✨
+Built with 💚 by [John Vincent](https://github.com/Techies-John)
