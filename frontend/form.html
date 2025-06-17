@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Todo List</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <title>New note</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/form/form.css" />
   </head>
   <body>
     <div id="app">
       <header>
         <nav class="nav-bar">
           <div class="nav-left">
-            <span class="headtext">TO-DO LIST</span>
-            <a href="/form.html" class="card-button add-item">Add Item</a>
+            <span class="headtext">NOTES 💚</span>
+            <a href="/home.html" class="card-button add-item">Go back</a>
           </div>
           <div class="github">
             <img class="star" src="/images/star.png" />
@@ -28,16 +29,30 @@
       </header>
 
       <main>
-        <section class="card-grid">
-          <div class="card">
-            <h2 class="card-title">New Task</h2>
-            <p class="card-description">
-              This is a sample description inside a card layout. Cards are great
-              for grouping content💚!
-            </p>
-            <button class="card-button">View Task</button>
-          </div>
-        </section>
+        <form
+          id="note-form"
+          action="http://localhost:3000/api/add-note"
+          method="post"
+        >
+          <label for="noteName">Title: </label>
+          <input
+            name="noteName"
+            type="text"
+            required
+            placeholder="Title name (e.g I love neon green💚)"
+          />
+          <br />
+
+          <label for="noteDescription">Description:</label>
+          <textarea
+            id="noteDescription"
+            name="noteDescription"
+            class="note-description"
+            placeholder="Type your notes here..."
+          ></textarea>
+
+          <button type="submit" class="card-button">Submit</button>
+        </form>
       </main>
 
       <footer class="site-footer">
@@ -51,11 +66,8 @@
             target="https://github.com/Techies-John/todolist"
             >GitHub Repo</a
           >
-          |
-          <a href="#top">Back to Top</a>
         </p>
       </footer>
     </div>
   </body>
-  <script src="js/index.js"></script>
 </html>

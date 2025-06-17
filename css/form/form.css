@@ -1,4 +1,4 @@
-#todo-form {
+#note-form {
   width: 50%;
   padding: 30px;
   background-color: var(--neon-midnight-color-bg-level2);
@@ -11,7 +11,7 @@ main {
   padding: 2rem;
 }
 
-#todo-form input[type="text"] {
+#note-form input[type="text"] {
   width: 95%;
   padding: 1rem;
   border: 2px solid var(--neon-midnight-color-accent);
@@ -23,14 +23,14 @@ main {
   margin-bottom: 1rem;
 }
 
-#todo-form label {
+#note-form label {
   display: block;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   font-weight: bold;
 }
 
-.task-description {
+.note-description {
   width: 95%;
   height: 120px;
   padding: 1rem;

@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New task</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/form/form.css" />
   </head>
   <body>
     <div id="app">
       <header>
         <nav class="nav-bar">
           <div class="nav-left">
-            <span class="headtext">TO-DO LIST</span>
-            <a href="/index.html" class="card-button add-item">Go back</a>
+            <span class="headtext">NOTES 💚</span>
+            <a href="/form.html" class="card-button add-item">Add Note</a>
           </div>
           <div class="github">
             <img class="star" src="/images/star.png" />
             Support me on GitHub&nbsp;
-            <a href="https://github.com/Techies-John/todolist">
+            <a href="https://github.com/Techies-John/">
               <img src="/images/github.png" />
             </a>
           </div>
@@ -29,24 +28,7 @@
       </header>
 
       <main>
-        <form id="todo-form" action="" method="post">
-          <label for="task-name"> Task Name: </label>
-          <input
-            name="task-name"
-            type="text"
-            required
-            placeholder="Task name (e.g making green tea💚)"
-          />
-          <br />
-
-          <label for="task-description">Description:</label>
-          <textarea
-            class="task-description"
-            placeholder="Type your notes here..."
-          ></textarea>
-
-          <button type="submit" class="card-button">Submit</button>
-        </form>
+        <section id="card-grid"></section>
       </main>
 
       <footer class="site-footer">
@@ -60,8 +42,11 @@
             target="https://github.com/Techies-John/todolist"
             >GitHub Repo</a
           >
+          |
+          <a href="#top">Back to Top</a>
         </p>
       </footer>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

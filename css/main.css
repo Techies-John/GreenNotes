@@ -101,15 +101,18 @@ main {
 
 /* card */
 
-.card-grid {
+#card-grid {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 16px;
+  gap: 10px;
   background-color: var(--neon-midnight-color-bg-level2);
   min-width: 30%;
   max-width: 80%;
   border-radius: 15px;
+  border: 1px solid var(--neon-midnight-color-bg-level3);
+  box-shadow: 0 0 12px var(--neon-midnight-color-accent-light);
+  /* box-shadow: 0 0 6px var(--neon-midnight-color-accent); */
 }
 
 .card {
@@ -118,6 +121,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 6px var(--neon-midnight-color-accent-light);
+  min-width: 300px;
   max-width: 400px;
   margin: 20px auto;
   cursor: pointer;
