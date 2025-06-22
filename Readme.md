@@ -1,27 +1,12 @@
 # Green Notes App 💚
 
-A full-stack notes-taking application powered by a containerized Node.js + MySQL backend, and a lightweight static frontend. Built with 💚 for simplicity, modularity, and local-first workflows.
+A full-stack note-taking application built with vanilla HTML/CSS/JS on the frontend and a Node.js + MySQL backend — fully containerized using Docker Compose. Built with 💚 for simplicity, modularity, and a local-first developer workflow.
+
+
 
 ---
 
-## 📦 Backend (Dockerized)
-
-The backend is fully containerized using **Docker Compose** and includes:
-
-- **Node.js (Express)**: REST API server
-- **MySQL 8.0**: Relational database
-- **Adminer**: Browser-based DB management UI
-
-### 🔧 Setup
-
-1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/Techies-John/todolist
-   cd todolist
-   ```
-
-2. Start backend services:
+### 🔧 How to run
 
    ```bash
    docker compose up --build
@@ -29,8 +14,9 @@ The backend is fully containerized using **Docker Compose** and includes:
 
 This spins up:
 
-- MySQL at `localhost:3306`
+- Frontend at `localhost:8081`
 - Node.js API at `localhost:3000`
+- MySQL at `localhost:3306`
 - Adminer at `localhost:8080`
 
 ---
@@ -39,30 +25,20 @@ This spins up:
 
 | Method | Route           | Description     |
 | ------ | --------------- | --------------- |
-| GET    | `/api/get-note` | Fetch all notes |
+| GET    | `/api/get-notes` | Get all notes |
+| GET	   | `/api/get-note/:id` |	Get a note by ID |
 | POST   | `/api/add-note` | Add a new note  |
+| PUT   | `/api/put-note` | Update a note  |
+| DELETE   | `/api/delete-note` | Delete a note  |
 
 ---
 
 ### 💾 Default MySQL Credentials
 
+- **Server**: `mysql-db`
 - **Database**: `app_db`
 - **User**: `app_user`
 - **Password**: `app_pass`
-
----
-
-## 🎨 Frontend (Non-Dockerized)
-
-The frontend is a static HTML/CSS setup you can preview using [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) or any HTTP server.
-
-### 🔧 Usage
-
-1. Open `index.html` or `new-note.html` via Live Server
-2. Submit new notes via the form
-3. Data is posted directly to `http://localhost:3000/api/add-note`
-
-> **Note:** Ensure the backend is running before submitting the form!
 
 ---
 
@@ -73,6 +49,7 @@ The frontend is a static HTML/CSS setup you can preview using [Live Server](http
 - Docker + Docker Compose
 - HTML/CSS (no frontend framework)
 - Adminer for DB inspection
+- Nginx (for static frontend)
 
 ---
 
@@ -87,4 +64,4 @@ The frontend is a static HTML/CSS setup you can preview using [Live Server](http
 
 ## 👨‍💻 Author
 
-Built with 💚 by [John Vincent](https://github.com/Techies-John)
+Made with 💚 and caffeine by [John Vincent](https://github.com/Techies-John)
