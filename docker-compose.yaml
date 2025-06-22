@@ -38,5 +38,12 @@ services:
       DB_PASSWORD: app_pass
       DB_NAME: app_db
 
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
 volumes:
   mysql_data:

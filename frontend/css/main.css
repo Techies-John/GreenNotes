@@ -67,14 +67,26 @@ header img {
 }
 
 .headtext {
-  font-size: 7vh;
+  font-size: 10vh;
   font-family: "Orbitron", sans-serif;
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--neon-midnight-color-text);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.headtext img {
+  height: 10vh;
+  width: 10vh;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 5vw;
+  gap: 10vw;
   margin: 0 auto; /* ← This centers it */
 }
 
@@ -104,7 +116,7 @@ main {
 #card-grid {
   padding: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 10px;
   background-color: var(--neon-midnight-color-bg-level2);
   min-width: 30%;
@@ -121,10 +133,9 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 6px var(--neon-midnight-color-accent-light);
-  min-width: 300px;
-  max-width: 400px;
+  width: 400px;
   margin: 20px auto;
-  cursor: pointer;
+  cursor: default;
 }
 
 .card-title {
@@ -145,6 +156,24 @@ main {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+}
+
+#card-button {
+  display: inline-block;
+  border: 2px solid var(--neon-midnight-color-accent);
+  color: var(--neon-midnight-color-accent);
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#card-button:hover {
+  background-color: var(--neon-midnight-color-bg-light);
+  color: var(--neon-midnight-color-text-light);
+  border-color: var(--neon-midnight-color-accent-light);
 }
 
 .card-button:hover {

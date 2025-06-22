@@ -1,0 +1,22 @@
+#note-title {
+  color: var(--neon-midnight-color-text);
+}
+
+#trash-can {
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
+  cursor: pointer;
+  border: 5px transparent var(--neon-midnight-color-bg-level3);
+  transition: filter 10s ease-in-out;
+}
+
+#trash-can:hover {
+  content: url(" /images/trash-can-icon-white.png");
+}
+
+#card-footer {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
