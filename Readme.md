@@ -53,15 +53,6 @@ This spins up:
 
 ---
 
-## 🚧 Future Improvements
-
-- Switch to `fetch()` for AJAX form submission
-- Containerize the frontend
-- Add update/delete endpoints
-- Integrate a frontend framework like Vue or React
-
----
-
 ## 👨‍💻 Author
 
 Made with 💚 and caffeine by [John Vincent](https://github.com/Techies-John)
