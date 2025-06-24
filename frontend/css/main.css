@@ -5,6 +5,7 @@ body {
   margin: 0;
   background-color: var(--neon-midnight-color-bg);
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -186,6 +187,8 @@ main {
 
 /* main */
 
+/* footer */
+
 footer {
   background-color: antiquewhite;
   height: 40px;
@@ -194,3 +197,27 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.site-footer a:hover {
+  color: #32cd32;
+  text-shadow: 0 0 5px #90ee90;
+  transition: all 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#top-link {
+  animation: pulse 1.5s infinite;
+}
+
+/* footer */
