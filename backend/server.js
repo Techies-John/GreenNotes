@@ -1,4 +1,4 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -10,10 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: "mysql",
+  user: 'app_user',
+  password: 'app_pass',
+  database: 'app_db',
 });
 
 app.get("/", (req, res) => {
@@ -23,13 +23,13 @@ app.get("/", (req, res) => {
 app.get("/api/get-notes", (req, res) => {
   pool.query("SELECT * FROM notes", (err, results) => {
     if (err) {
-      console.error("Error fetching notes:", err.message);
+      console.error("Error fetching notes:", err); // full error object
       return res.status(500).send("Database error");
     }
 
     res.json(results);
   });
-});
+})
 
 app.get("/api/get-note/:id", (req, res) => {
   const noteId = req.params.id;
