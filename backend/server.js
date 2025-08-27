@@ -40,7 +40,7 @@ app.get("/api/get-note/:id", (req, res) => {
       return res.status(500).send("Database error");
     }
     if (results.length === 0) {
-      return res.status(404).send("Note not found");
+      return res.status(404).send("Note not found!");
     }
 
     res.json(results[0]);
