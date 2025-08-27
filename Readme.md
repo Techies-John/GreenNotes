@@ -9,7 +9,7 @@ A full-stack note-taking application built with vanilla HTML/CSS/JS on the front
 ### 🔧 How to run
 
    ```bash
-   docker compose up --build
+   docker compose up -d --build
    ```
 
 This spins up:
@@ -35,7 +35,7 @@ This spins up:
 
 ### 💾 Default MySQL Credentials
 
-- **Server**: `mysql-db`
+- **Server**: `mysql`
 - **Database**: `app_db`
 - **User**: `app_user`
 - **Password**: `app_pass`
@@ -45,7 +45,7 @@ This spins up:
 ## 🛠️ Tech Stack
 
 - Node.js + Express
-- MySQL 8.0
+- MySQL 8.0.43-bookworm (Docker Image)
 - Docker + Docker Compose
 - HTML/CSS (no frontend framework)
 - Adminer for DB inspection
