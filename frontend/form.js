@@ -22,7 +22,7 @@ document.getElementById("note-form").addEventListener("submit", async (e) => {
       icon: "success",
       confirmButtonText: "Cool",
     }).then(() => {
-      window.location.href = " /home.html";
+      window.location.href = " /index.html";
     });
   } catch (err) {
     console.error("Error:", err.message);

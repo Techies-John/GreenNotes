@@ -112,7 +112,7 @@ document.getElementById("note-form").addEventListener("submit", async (e) => {
     if (!res.ok) throw new Error("Update failed");
 
     alert("Note updated successfully!");
-    window.location.href = " /home.html";
+    window.location.href = " /index.html";
   } catch (err) {
     console.error("Update error:", err.message);
     alert("Failed to update the note.");
@@ -140,7 +140,7 @@ function handleDelete() {
             text: "Your note has been deleted.",
             icon: "success",
           }).then(() => {
-            window.location.href = " /home.html";
+            window.location.href = " /index.html";
           });
         })
         .catch((err) => {
